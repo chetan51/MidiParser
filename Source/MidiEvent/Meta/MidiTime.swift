@@ -11,6 +11,9 @@ import Foundation
 public struct MidiTime {
     let inSeconds: TimeInterval
     let inTicks: Ticks
+
+    public var seconds: TimeInterval { inSeconds }
+    public var ticks: Ticks { inTicks }
 }
 
 public extension MidiTime {
